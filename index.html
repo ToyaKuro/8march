@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта, мама!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap">
+    <link rel="icon" href="images/icons/heart.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>С 8 Марта, мама!</h1>
+        </header>
+
+        <main>
+            <div class="heart-icon">
+                <a href="/8-march-main/index.html">
+                    <img src="/images/icons8-сердце.gif" alt="Сердце">
+                  </a>
+            </div>
+
+            <section class="congratulations">
+                <p>Дорогая мама, поздравляю! Ты — самая добрая, заботливая и прекрасная мама на свете. Спасибо за всё, что ты делаешь для нас! И надеюсь ты простишь меня что я такой </p>
+            </section>
+
+            <button onclick="generatePoem()" class="btn">Сгенерировать стих</button>
+        </main>
+
+        <footer>
+            <a href="/heart.html" class="ready-text" id="readyText">С праздником тебя!</a>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для стихов -->
+    <div id="poem-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Ваши стихи</h2>
+            <div id="poem-list"></div>
+        </div>
+    </div>
+
+    <script src="js/interactive.js"></script>
+</body>
+</html>
